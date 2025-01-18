@@ -3,3 +3,14 @@
 # Найдите и замените все вхождения слова "Python" на слово "Питон" (регистр учитывать).
 # Запишите обновленный текст в новый файл с другим именем.
 # Выведите на экран сообщение о количестве произведённых замен.
+f = open('task2.txt', 'r', encoding='utf-8')
+lines=[line for line in f]
+a=0
+b=''
+for j in range(len(lines)):
+    a+=len(lines[j])
+    b+=lines[j]
+for i in range(a-5):
+    if b[i: i+6]=='Python':
+        b=b[0:i]+'Питон '+b[i+7:a]
+print(b)

@@ -6,3 +6,10 @@
 # слово2: количество
 #
 # Убедитесь, что слова записаны в алфавитном порядке.
+f = open('task2.txt', 'r', encoding='utf-8')
+lines=[line for line in f]
+a=0
+b=''
+for j in range(len(lines)):
+    a+=len(lines[j])
+    b+=lines[j]
