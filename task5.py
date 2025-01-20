@@ -17,7 +17,7 @@ d=0
 e=[]
 for i in range(a):
     for j in range(i, a):
-        if b[j]==' ' or b[j]=='.':
+        if b[j]==' ' or b[j]=='.' or b[j]=='!':
             e.append(b[d:j])
             d=j
             break
