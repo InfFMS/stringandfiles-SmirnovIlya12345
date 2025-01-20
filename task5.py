@@ -41,3 +41,4 @@ for i in range(len(f2)):
 with open('1234567.txt', 'w', encoding='utf-8') as g:
     for s in [l2, '\n', str(l)]:
         g.write(s)
+print(l2,l)
