@@ -19,3 +19,4 @@ for i in range(a):
         c+=1
 print(c-len(lines))
 print(a)
+f.close()

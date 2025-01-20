@@ -14,3 +14,4 @@ for i in range(a-5):
     if b[i: i+6]=='Python':
         b=b[0:i]+'Питон '+b[i+7:a]
 print(b)
+f.close()
