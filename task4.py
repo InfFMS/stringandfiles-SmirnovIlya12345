@@ -3,3 +3,29 @@
 # Слова во всех предложениях должны быть приведены к верхнему регистру.
 # Между словами вместо пробела ставится символ "_".
 # После записи откройте этот файл, считайте содержимое и выведите его на экран.
+print("Write 5 sentences")
+s1=str(input())
+s2=str(input())
+s3=str(input())
+s4=str(input())
+s5=str(input())
+for i in range(len(s1)):
+    if s1[i]==' ':
+        s1=s1[:i:]+'_'+s1[i+1::]
+for i in range(len(s2)):
+    if s2[i]==' ':
+        s2=s2[:i:]+'_'+s2[i+1::]
+for i in range(len(s3)):
+    if s3[i]==' ':
+        s3=s3[:i:]+'_'+s3[i+1::]
+for i in range(len(s4)):
+    if s4[i]==' ':
+        s4=s4[:i:]+'_'+s4[i+1::]
+for i in range(len(s5)):
+    if s5[i]==' ':
+        s5=s5[:i:]+'_'+s5[i+1::]
+with open('123456.txt', 'w') as f:
+    for s in [s1.upper(), '\n', s2.upper(), '\n', s3.upper(), '\n', s4.upper(), '\n', s5.upper()]:
+        f.write(s)
+
+
